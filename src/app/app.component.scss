@@ -1,6 +1,6 @@
 main {
   width: 100%;
-  max-width: 1440%;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 6.25rem;
 }
@@ -9,4 +9,10 @@ main {
   position: sticky;
   top: 0;
   left: 0;
+}
+
+.footer {
+  width: 100%;
+  display: block;
+  padding: 4.8rem 3.2rem;
 }
