@@ -8,57 +8,45 @@
         FL 33134 USA
       </span>
     </div>
-    <ul class="links">
-      <li class="column__title">
+    <div class="links">
+      <span class="column__title">
         Links
-      </li>
-      <li>
-        <a href="" class="link">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="" class="link">
-          Shop
-        </a>
-      </li>
-      <li>
-        <a href="" class="link">
-          Blog
-        </a>
-      </li>
-      <li>
-        <a href="" class="link">
-          Contact
-        </a>
-      </li>
-    </ul>
-    <ul class="help">
-      <li class="column__title">
+      </span>
+      <a [routerLink]="['']" class="link">
+        Home
+      </a>
+      <a [routerLink]="['']" class="link">
+        Shop
+      </a>
+      <a [routerLink]="['']" class="link">
+        Blog
+      </a>
+      <a [routerLink]="['']" class="link">
+        Contact
+      </a>
+    </div>
+    <div class="help">
+      <span class="column__title">
         Help
-      </li>
-      <li>
-        <a href="" class="link">
-          Payment Options
-        </a>
-      </li>
-      <li>
-        <a href="" class="link">
-          Returns
-        </a>
-      </li>
-      <li>
-        <a href="" class="link">
-          Privacy Policies
-        </a>
-      </li>
-    </ul>
+      </span>
+      <a href="" class="link">
+        Payment Options
+      </a>
+      <a href="" class="link">
+        Returns
+      </a>
+      <a href="" class="link">
+        Privacy Policies
+      </a>
+    </div>
     <div class="newsletter">
       <h3 class="column__title">Newsletter</h3>
       <div class="newsletter__input-container">
-        <label for="email" class="sr-only">Email</label>
-        <input type="email" name="email" id="email" placeholder="enter your email address" required>
-        <button type="submit">subscribe</button>
+        <form action="">
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" name="email" id="email" placeholder="enter your email address" required>
+          <button type="submit">subscribe</button>
+        </form>
       </div>
     </div>
   </div>

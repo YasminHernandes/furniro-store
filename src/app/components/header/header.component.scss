@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   gap: 1.6rem;
   margin: 0 auto;
-  padding: 3.2rem;
+  padding: 3.2rem 0;
 
   .logo__container {
     @extend .flex;
