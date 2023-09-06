@@ -1,18 +1,9 @@
-main {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 6.25rem;
-}
 
 .header {
+  display: flex;
   position: sticky;
   top: 0;
   left: 0;
-}
-
-.footer {
-  width: 100%;
-  display: block;
-  padding: 4.8rem 3.2rem;
+  background: #fff;
+  z-index: 99999;
 }

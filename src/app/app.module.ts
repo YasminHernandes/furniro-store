@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -7,7 +7,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
-import { FooterComponent } from './footer/footer.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BrowseRangeComponent } from './components/browse-range/browse-range.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+    HeroComponent,
+    BrowseRangeComponent,
   ],
   imports: [
     BrowserModule,

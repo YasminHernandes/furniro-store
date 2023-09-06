@@ -6,13 +6,11 @@
 }
 
 header {
-  width: 100%;
-  max-width: 1440px;
   @extend .flex;
   justify-content: space-between;
   gap: 1.6rem;
-  margin: 0 auto;
-  padding: 3.2rem 0;
+  padding: 3.2rem 5.6rem;
+  background: #fff;
 
   .logo__container {
     @extend .flex;
