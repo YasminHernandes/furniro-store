@@ -1,0 +1,42 @@
+@import 'src/_variables.scss';
+
+.browse-range__container {
+    margin-bottom: 5.6rem;
+    .title {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: $color-black-3;
+        text-align: center;
+    }
+    .description {
+        font-weight: 400;
+        font-size: 2.0rem;
+        color: $color-black-6;
+        text-align: center;
+    }
+
+    .banners__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.0rem;
+        margin-top: 6.4rem;
+
+        .banner {
+            overflow: hidden;
+
+            img {
+                width: 380px;
+                height: 480px;
+                border-radius: 8px;
+            }
+            .title {
+                font-weight: 600;
+                font-size: 2.4rem;
+                color: $color-black-3;
+                text-align: center;
+                margin-top: 2.0rem;
+            }
+        }
+    }
+}
