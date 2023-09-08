@@ -10,6 +10,8 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HeroComponent } from './components/hero/hero.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowseRangeComponent } from './components/browse-range/browse-range.component';
+import { OurProductsComponent } from './components/our-products/our-products.component';
+import { LayerHoverComponent } from './components/layer-hover/layer-hover.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { BrowseRangeComponent } from './components/browse-range/browse-range.com
     FooterComponent,
     HeroComponent,
     BrowseRangeComponent,
+    OurProductsComponent,
+    LayerHoverComponent,
   ],
   imports: [
     BrowserModule,
