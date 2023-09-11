@@ -1,0 +1,201 @@
+@import 'src/_variables.scss';
+
+.gallery__container {
+    width: 100%;
+    height: 670px;
+    display: flex;
+    align-items: center;
+    gap: 4.2rem;
+    background: $color-lightest-bg;
+    padding: 4.4rem;
+    margin: 7.2rem auto;
+
+    .title__container {
+        margin-left: calc(10.2rem - 4.4rem);
+
+        .title {
+            width: 420px;
+            font-size: 4.0rem;
+            font-weight: 700;
+            line-height: 120%;
+            color: $color-gray-1;
+        }
+        .description {
+            width: 368px;
+            margin: .8rem 0 2.4rem;
+            font-family: Poppins;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 150%;
+            color: $color-gray-4;
+        }
+        .explore-more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 176px;
+            padding: 1.2rem;
+            background-color: $primary;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 150%;
+            color:  $color-white;
+            text-transform: capitalize;
+
+            &:hover {
+                filter: brightness(90%);
+            }
+        }
+    }
+    .gallery {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .gallery-swiper {
+            width: 400px;
+            height: 100%;
+            display: flex;
+            position: relative;
+
+            &::part(container) {
+                overflow: initial;
+            }
+            &::part(wrapper) {
+                gap: 3.2rem;
+                transition: all .4s ease-in;
+            }
+            &::part(button-prev) {
+                display: none;
+            }
+            &::part(button-next) {
+                width: 2.4rem;
+                height: 2.4rem;
+                right: -400px;
+
+                &::after {
+                    content: url('../../../assets/arrow-right-head.svg');
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 4.8rem;
+                    height: 4.8rem;
+                    position: absolute;
+                    right: 0;
+                    background: $color-white;
+                    border-radius: 50%;
+                    color: $primary;
+                }
+            }
+            &::part(button-next)::first-child {
+                display: none;
+            }
+            &::part(pagination) {
+                width: max-content;
+                display: flex;
+                gap: 2.0rem;
+                position: relative;
+                right: -410px;
+                left: auto;
+                bottom: 40px;
+            }
+            &::part(bullet), 
+            &::part(bullet-active) {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            &::part(bullet-active)  {
+                background: $primary;
+                display: grid;
+                align-content: center;
+                justify-content: center;
+
+                &::after {
+                    content: '';
+                    display: flex;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    border: 1px solid rgb(184 142 47 / .7);
+                    border-radius: 50%;
+                }
+            }
+            .slide {
+                width: max-content !important;
+                height: 100%;
+                left: 0;
+
+                img {
+                    width: 372px;
+                    height: 486px;
+                }
+
+                &.swiper-slide-active {
+                    img {
+                        height: 100%;
+                    }
+                    .product-informations__container {
+                        display: flex;
+                    }
+                }
+
+                .product-informations__container {
+                    width: max-content;
+                    display: none;
+                    position: relative;
+                    bottom: 170px;
+                    left: 30px;
+
+                    .product-information {
+                        width: 232px;
+                        height: 140px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        background: rgba(255, 255, 255, 0.72);
+                        backdrop-filter: blur(1.5px);
+                        padding: 3.2rem;
+
+                        .title {
+                            display: flex;
+                            align-items: center;
+                            gap: .8rem;
+                            color: $color-gray-4;
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%;
+
+                            span {
+                                width: 27px;
+                                height: 1px;
+                                display: flex;
+                                border-bottom: 1px solid $color-gray-4;
+                            }
+                        }
+                        .description {
+                            color: $color-gray-1;
+                            font-family: Poppins;
+                            font-size: 2.8rem;
+                            font-weight: 600;
+                            line-height: 120%;
+                        }
+                    }
+                    .nav {
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-self: flex-end;
+                        background: $primary;
+
+                        &:hover {
+                            filter: brightness(90%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import { NgModule, Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrowseRangeComponent } from './components/browse-range/browse-range.component';
 import { OurProductsComponent } from './components/our-products/our-products.component';
 import { LayerHoverComponent } from './components/layer-hover/layer-hover.component';
+import { GallerySwiperComponent } from './components/gallery-swiper/gallery-swiper.component';
+import { register } from 'swiper/element/bundle';
+
+register();
 
 @NgModule({
   declarations: [
@@ -23,14 +27,16 @@ import { LayerHoverComponent } from './components/layer-hover/layer-hover.compon
     BrowseRangeComponent,
     OurProductsComponent,
     LayerHoverComponent,
+    GallerySwiperComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularSvgIconModule.forRoot()
+    AngularSvgIconModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
