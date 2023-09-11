@@ -7,6 +7,15 @@ import Swiper from 'swiper';
   styleUrls: ['./gallery-swiper.component.scss']
 })
 export class GallerySwiperComponent implements OnInit {
+  swiper = new Swiper('.swiper', {
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      clickable: true,
+    },
+    loop: true,
+  });
 
   constructor() { }
 
