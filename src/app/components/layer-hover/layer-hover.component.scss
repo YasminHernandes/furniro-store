@@ -27,8 +27,13 @@
         }
     }
     .actions {
+        display: flex;
+
         .action {
             color: $color-white;
+            display: flex;
+            align-items: center;
+            gap: .4rem;
 
             &:not(:last-child) {
                 margin-right: 2.0rem;
@@ -37,6 +42,7 @@
                 opacity: .8;
             }
             svg-icon {
+                height: 18px;
                 vertical-align: middle;
             }
         }
