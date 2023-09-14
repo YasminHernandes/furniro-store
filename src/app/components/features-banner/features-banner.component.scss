@@ -1,0 +1,33 @@
+@import "src/_variables.scss";
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background: $primary-light;
+    padding: 10.0rem 5.4rem;
+
+    .feature {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.2rem;
+
+        .title__container {
+            display: flex;
+            flex-direction: column;
+           
+            .title {
+                font-weight: 600;
+                font-size: 2.5rem;
+                line-height: 150%;
+                color: $color-text;
+                opacity: .75;
+            }
+            .text {
+                font-weight: 500;
+                font-size: 2.0rem;
+                line-height: 150%;
+                color: $color-gray-2;
+            }
+        }
+    }
+}

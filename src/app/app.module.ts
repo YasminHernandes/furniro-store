@@ -17,6 +17,7 @@ import { register } from 'swiper/element/bundle';
 import { GalleryShareComponent } from './components/gallery-share/gallery-share.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { FeaturesBannerComponent } from './components/features-banner/features-banner.component';
 
 register();
 
@@ -34,6 +35,7 @@ register();
     GalleryShareComponent,
     ShopComponent,
     ProductCardComponent,
+    FeaturesBannerComponent,
   ],
   imports: [
     BrowserModule,
