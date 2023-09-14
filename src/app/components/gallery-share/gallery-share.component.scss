@@ -1,0 +1,49 @@
+@import "src/_variables.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 4.4rem;
+    .text {
+        font-weight: 600;
+        font-size: 2.0rem;
+        line-height: 150%;
+        color: $color-gray-4;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 4.0rem;
+        line-height: 120%;
+        color: $color-gray-1;
+    }
+    .gallery__container {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        position: relative;
+        left: -8px;
+
+        .row__one {
+            display: flex;
+            align-items: baseline;
+            gap: 1.6rem;
+            margin-bottom: 1.6rem;
+
+            .banner-image {
+                height: max-content;
+            }
+        }
+
+        .row__two {
+            display: flex;
+            gap: 1.6rem;
+
+            .banner-image {
+                height: max-content;
+            }
+        }
+    }
+}

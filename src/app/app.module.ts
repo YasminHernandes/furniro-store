@@ -14,6 +14,7 @@ import { OurProductsComponent } from './components/our-products/our-products.com
 import { LayerHoverComponent } from './components/layer-hover/layer-hover.component';
 import { GallerySwiperComponent } from './components/gallery-swiper/gallery-swiper.component';
 import { register } from 'swiper/element/bundle';
+import { GalleryShareComponent } from './components/gallery-share/gallery-share.component';
 
 register();
 
@@ -28,6 +29,7 @@ register();
     OurProductsComponent,
     LayerHoverComponent,
     GallerySwiperComponent,
+    GalleryShareComponent,
   ],
   imports: [
     BrowserModule,
