@@ -1,0 +1,113 @@
+@import 'src/_variables.scss';
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.2rem 5.6rem;
+    margin: 0 auto 6.4rem;
+    background: $primary-light;
+
+    .tools__container {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+
+        .icon {
+            height: 26px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .filter__container {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            cursor: pointer;
+
+            .filter__title {
+                font-weight: 400;
+                font-size: 2.0rem;
+                line-height: normal;
+                color: $color-black;
+            }
+        }
+
+        .results-values {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: normal;
+            color: $color-black;
+            margin-left: .8rem;
+            padding-left: 3.2rem;
+            border-left: 1px solid $color-gray-light;
+        }
+    }
+    .show-and-sort__container {
+        display: flex;
+        gap: 3.2rem;
+
+        .title {
+            font-weight: 400;
+            font-size: 2.0rem;
+            line-height: normal;
+            color: $color-black;
+        }
+
+        .value {
+            font-weight: 400;
+            color: $color-gray-light;
+            font-size: 1.6rem;
+            line-height: normal;
+            cursor: pointer;
+        }
+        
+        .dropdown__container {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            position: relative;
+            
+            .dropdown {
+                background: $color-white;
+                padding: .8rem 1.6rem;
+            }
+
+            &:first-child {
+                .dropdown {
+                    width: 52px;
+                }
+            }
+
+            &:last-child {
+                .dropdown {
+                    width: 244px;
+                }
+            }
+
+            .dropdown__options {
+                display: none;
+                
+                &.--open {
+                    width: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 2.4rem;
+                    position: absolute;
+                    top: 44px;
+                    right: 0;
+                    padding: 1.2rem;
+                    background: $color-white;
+                    z-index: 99999;
+    
+                    .option {
+                        @extend .value;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
