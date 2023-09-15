@@ -19,6 +19,7 @@ import { ShopComponent } from './pages/shop/shop.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { FeaturesBannerComponent } from './components/features-banner/features-banner.component';
 import { BreadcrumbBannerComponent } from './components/breadcrumb-banner/breadcrumb-banner.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 register();
 
@@ -38,6 +39,7 @@ register();
     ProductCardComponent,
     FeaturesBannerComponent,
     BreadcrumbBannerComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
