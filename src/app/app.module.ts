@@ -18,6 +18,7 @@ import { GalleryShareComponent } from './components/gallery-share/gallery-share.
 import { ShopComponent } from './pages/shop/shop.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { FeaturesBannerComponent } from './components/features-banner/features-banner.component';
+import { BreadcrumbBannerComponent } from './components/breadcrumb-banner/breadcrumb-banner.component';
 
 register();
 
@@ -36,6 +37,7 @@ register();
     ShopComponent,
     ProductCardComponent,
     FeaturesBannerComponent,
+    BreadcrumbBannerComponent,
   ],
   imports: [
     BrowserModule,
